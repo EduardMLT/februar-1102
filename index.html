@@ -10,6 +10,7 @@
 
   <body>
     <h1>CUCINA DI CATHERINA</h1>
+
     <!--video 1-->
     <div class="container">
       <div class="slide-container active">
@@ -23,6 +24,7 @@
         </div>
       </div>
     </div>
+
     <!--video 2-->
     <div class="container">
       <div class="slide-container">
@@ -36,6 +38,7 @@
         </div>
       </div>
     </div>
+
     <!--video 3-->
     <div class="container">
       <div class="slide-container">
@@ -49,6 +52,7 @@
         </div>
       </div>
     </div>
+
     <!--video 4-->
     <div class="container">
       <div class="slide-container">
@@ -62,24 +66,24 @@
         </div>
       </div>
 
-      <div id="next" onclick="next()">></div>
-      <div id="prev" onclick="prev()"><</div>
+      <div id="next" onclick="next()">8</div>
+      <div id="prev" onclick="prev()">8</div>
     </div>
 
     <script>
-      let slides = document.querySelectorAll(".slide-container");
+      let slides = document.querySelectorAll('.slide-container');
       let index = 0;
 
       function next() {
-        slides[index].classList.remove("active");
+        slides[index].classList.remove('active');
         index = (index + 1) % slides.length;
-        slides[index].classList.add("active");
+        slides[index].classList.add('active');
       }
 
       function prev() {
-        slides[index].classList.remove("active");
+        slides[index].classList.remove('active');
         index = (index - 1 + slides.length) % slides.length;
-        slides[index].classList.add("active");
+        slides[index].classList.add('active');
       }
     </script>
   </body>
